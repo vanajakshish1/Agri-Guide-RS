@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>India Agriculture Statistics — Crops & Youth</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #1b2430, #0e141b);
+      color: #e9ecf1;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+      background: linear-gradient(135deg, #4f46e5, #9333ea);
+      color: white;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 2.2em;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1em;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      margin-bottom: 30px;
+      padding: 25px 30px;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+
+    h2 {
+      color: #a78bfa;
+      font-size: 1.6em;
+      margin-top: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 14px 10px;
+      text-align: left;
+    }
+
+    th {
+      background: #312e81;
+      color: #c7d2fe;
+      text-transform: uppercase;
+      font-size: 0.9em;
+    }
+
+    tr:nth-child(even) td {
+      background: rgba(255,255,255,0.03);
+    }
+
+    tr:hover td {
+      background: rgba(255,255,255,0.07);
+    }
+
+    .note {
+      font-size: 0.9em;
+      color: #9ca3af;
+      margin-top: 10px;
+    }
+
+    .bar {
+      height: 12px;
+      border-radius: 8px;
+      background: linear-gradient(90deg,#8b5cf6,#6366f1);
+      display: inline-block;
+    }
+
+    .bar-bg {
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 5px;
+      margin-bottom: 8px;
+    }
+
+    .kpi {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .item {
+      background: linear-gradient(135deg, rgba(79,70,229,0.2), rgba(147,51,234,0.25));
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 18px;
+      border-radius: 14px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .item:hover {
+      transform: scale(1.04);
+    }
+
+    .item div:first-child {
+      font-size: 1.8em;
+      font-weight: 700;
+      color: #c084fc;
+    }
+
+    footer {
+      text-align: center;
+      color: #9ca3af;
+      padding: 20px 10px 40px;
+      font-size: 0.85em;
+    }
+
+    button {
+      background: linear-gradient(135deg,#4f46e5,#9333ea);
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      margin: 6px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+      font-weight: 600;
+      font-size: 1em;
+    }
+
+    button:hover {
+      background: linear-gradient(135deg,#6366f1,#a855f7);
+    }
+
+    @media(max-width:768px){
+      header h1{font-size:1.6em;}
+      .container{padding:10px;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>India — Agriculture Statistics</h1>
+    <p>Crop production and youth employment insights (2023-24)</p>
+  </header>
+
+  <div class="container">
+
+    <section class="card">
+      <h2>Crop Production (Selected)</h2>
+      <table>
+        <tr><th>Crop</th><th>Production</th><th>Notes</th></tr>
+        <tr><td>Rice</td><td>137.83 million tonnes (FY 2023-24)</td><td>Major staple; irrigated and highly mechanised.</td></tr>
+        <tr><td>Wheat</td><td>113.29 million tonnes (FY 2023-24)</td><td>Rabi crop; high yields in North India.</td></tr>
+        <tr><td>Maize (Corn)</td><td>~42.28 million tonnes (2024-25 est.)</td><td>Used for food, feed & industry; increasing yields.</td></tr>
+        <tr><td>Coconut</td><td>~13.5 million tonnes of nuts (FY 2022-23)</td><td>Plantation crop; production reported in nuts.</td></tr>
+        <tr><td>Arecanut</td><td>~0.76 – 1.38 million tonnes</td><td>India is a leading producer; regional crop.</td></tr>
+        <tr><td>Finger Millet (Ragi)</td><td>Part of 15.38 million tonnes of millets (FY 2023-24)</td><td>Important in southern India; grown on drylands.</td></tr>
+      </table>
+      <p class="note">Data from IBEF, Economic Times & OECD (approximate and rounded).</p>
+    </section>
+
+    <section class="card">
+      <h2>Relative Crop Production (Visual)</h2>
+      <div class="bar-bg"><div class="bar" style="width:100%"></div></div>
+      <div class="note">Rice</div>
+      <div class="bar-bg"><div class="bar" style="width:82%"></div></div>
+      <div class="note">Wheat</div>
+      <div class="bar-bg"><div class="bar" style="width:31%"></div></div>
+      <div class="note">Maize</div>
+      <div class="bar-bg"><div class="bar" style="width:9%"></div></div>
+      <div class="note">Coconut</div>
+      <div class="bar-bg"><div class="bar" style="width:2%"></div></div>
+      <div class="note">Arecanut</div>
+      <div class="bar-bg"><div class="bar" style="width:11%"></div></div>
+      <div class="note">Finger Millet</div>
+    </section>
+
+    <section class="card">
+      <h2>Youth & Agriculture</h2>
+      <div class="kpi">
+        <div class="item"><div>32.4%</div><div>Youth employed in agriculture (2022-23)</div></div>
+        <div class="item"><div>42.2%</div><div>Rural youth employed in agriculture</div></div>
+        <div class="item"><div>79.8%</div><div>Self-employed youth in agriculture</div></div>
+        <div class="item"><div>10.8%</div><div>Rural youth with highly favourable attitude toward agriculture</div></div>
+      </div>
+      <p class="note">Source: CEDA, UNFPA, NITI Aayog, 2022-23</p>
+      <p class="note">Implication: mechanisation and modernisation could attract more youth to agriculture.</p>
+    </section>
+
+    <!-- ✅ Download Button Section -->
+    <div style="text-align:center; margin-top:20px;">
+      <a href="https://drive.google.com/file/d/1bowLGomMYQoWzm9SRjP7htw-YIgCdbil/view?usp=drive_link" download>
+        <button>Download Setup (.exe)</button>
+      </a>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 India Agriculture Data Visual | Educational Use Only
+  </footer>
+</body>
+</html>
